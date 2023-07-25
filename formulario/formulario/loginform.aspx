@@ -9,21 +9,21 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            Nome:
+            <b> Nome:</b>           
             <asp:TextBox ID="tb_nome" runat="server" Width="571px"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator_nome" runat="server" ControlToValidate="tb_nome" ErrorMessage="Nome obrigatório" Font-Bold="True" ForeColor="Red">*</asp:RequiredFieldValidator>
             <br />
             <br />
-            Morada: <asp:TextBox ID="tb_morada" runat="server" TextMode="MultiLine" Width="548px"></asp:TextBox>
+            <b>Morada:</b> <asp:TextBox ID="tb_morada" runat="server" TextMode="MultiLine" Width="548px"></asp:TextBox>
             <br />
             <br />
-            Email:
+           <b> Email:</b>
             <asp:TextBox ID="tb_email" runat="server" TextMode="Email" Width="556px"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator_email" runat="server" ControlToValidate="tb_email" ErrorMessage="Email obrigatório" Font-Bold="True" ForeColor="Red">*</asp:RequiredFieldValidator>
             <asp:RegularExpressionValidator ID="RegularExpressionValidator_email" runat="server" ControlToValidate="tb_email" ErrorMessage="Email inválido" Font-Bold="True" ForeColor="#00CC00" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator>
             <br />
             <br />
-            Código Postal:
+            <b>Código Postal:</b>
             <asp:TextBox ID="tb_codpostal" runat="server" Width="321px"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator_codpostal" runat="server" ControlToValidate="tb_codpostal" ErrorMessage="Código postal obrigatório" Font-Bold="True" ForeColor="Red">*</asp:RequiredFieldValidator>
             <asp:RegularExpressionValidator ID="RegularExpressionValidator_codpostal" runat="server" ControlToValidate="tb_codpostal" ErrorMessage="Código postal inválido" Font-Bold="True" ForeColor="#00CC00" ValidationExpression="^\d{4}(-\d{3})?$">*</asp:RegularExpressionValidator>
